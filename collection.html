@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>collection</title>
+
+    <style>
+        :root {
+            --increase-size: 1.48em;
+        }
+        body{
+            font-size: 8pt;
+            font-size: 1.48em;
+            font-weight: normal;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            white-space: normal;
+        }
+        .container{
+            width: 1227pt;
+            height: 1670pt;
+            margin: auto;
+            position: relative;
+        }
+        .content{
+            /* width: 8.27in; */
+            white-space: normal;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .light{
+            color: #5b4f47;
+        }
+        .Header{
+            background-color: #1d3b58;
+            color: #ffffff;
+            height: 125px + 1.48em;
+            padding-bottom: 10px;
+            margin-bottom: 21px;
+            position: relative;
+            /* width: 13in; */
+            /* padding-right: 100px;
+            padding-left: 100px; */
+        }
+        .page_no{
+            position: absolute;
+            right: 75px;
+            font-weight: normal;
+        }
+        .page_name{
+            font-size: 63.560118258px;
+            padding-left: 67.58568px;
+            position: relative;
+            top: 45px;
+        }
+        .logo{
+            font-size: 65.62504578px;
+            position: absolute;
+            right: 105px;
+            margin-top: 30px;
+        }
+        .company_info{
+            margin-top: 45.666px;
+            padding-left: 67.58568px;
+            padding-right: 45.666px;
+            text-transform: uppercase;
+        }
+        .company_info .info{
+            margin-left: 145px;
+        }
+        .invoice{
+            white-space: normal;
+        }
+        .invoice .title{
+            font-size: 12.98329926px;
+            font-size: 19.2152829048px;
+            font-weight: 500;
+        }
+        .invoice .name{
+            font-size: 22.07063484px;
+            font-size: 32.6645395632px;
+            padding-bottom: 44.4px;
+        }
+        .invoice .ocr{
+            position: relative;
+            top: -35px;
+            padding-left: 162.8px;
+        }
+        .reminder_text{
+            margin-top: 50.304px;
+            margin-bottom: 74px;
+            text-align: justify;
+            white-space: normal;
+            padding-right: 37.5px;
+            padding-bottom: 29.6px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+        .reminder_text_title{
+            margin-bottom: 14.8px;
+            font-size: 19.40627861px;
+            font-size: 148%;
+        }
+        .reminder_text .upper_text{
+            margin-bottom: 29.6px;
+        }
+        .reminder_text .upper_text,
+        .reminder_text .lower_text{
+            font-size: 17.76px;
+        }
+        .table{
+            position: relative;
+            white-space: nowrap;
+        }
+        .table .title{
+            font-size: 13.866666666666667px;
+            font-size: 148%;
+        }
+        .table_rows{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        /* .table_rows div{
+            padding-top: 12.5px;
+        } */
+        .table .value{
+            position: absolute;
+            right: 0;
+            padding-right: 27.5px;
+            white-space: nowrap;
+        }
+        .table, .reminder_text, .invoice, .payment, .footer{
+            padding-left: 44.4px;
+        }
+        .reminder_table{
+            font-size: 13.866666666666667px;
+            font-size: 20.5226568px;
+            padding-bottom: 20px;
+        }
+        .reminder_table_title{
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .TOTAL{
+            background-color: #1d3b58;
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            padding-top: 27px;
+            padding-bottom: 90px;
+            font-size: 20.01679039px;
+            font-size: 148%;
+        }
+        .TOTAL .value{
+            position: absolute;
+            right: 30px;
+        }
+        .TOTAL .total{
+            position: absolute;
+            left: 1021px;
+        }
+        .text_table{
+            margin-top: 96.2px;
+            padding-left: 44.4px;
+            white-space: normal;
+            text-align: justify;
+        }
+        .text_table .first-p,
+        .text_table .second-p,
+        .text_table .third-p{
+            margin-bottom: 29.6px;
+            color: #5b4f47;
+        }
+        .payment{
+            margin-top: 81.4px;
+            position: relative;
+        }
+        .payment_title{
+            font-size: 20.00678253px;
+            font-size: 148%;
+        }
+        .payment .second-column{
+            padding-left: 48.1px;
+
+            /* position: absolute;
+            top: 80px; */
+        }
+        .iban, .payment_method{
+            margin-bottom: 24px;
+        }
+        .iban, .bank_transfer{
+            font-size: 19.7501473272px;
+        }
+        .bank_transfer{
+            padding-bottom: 47px;
+        }
+        .bank_transfer .title{
+            padding-bottom: 13px;
+        }
+        .details{
+            font-weight: 500;
+            margin-top: 203.5px;
+            padding-left: 44.4px;
+            white-space: normal;
+            text-align: justify;
+        }
+        .details .details_title{
+            font-size: 39.560355536px;
+            font-weight: bold;
+            margin-bottom: 29.6px;
+        }
+        .details .first-p{
+            margin-bottom: 29.6px;
+        }
+        .details .first-p,
+        .details .second-p{
+            color: #5b4f47;
+        }
+        .footer{
+            color: #5b4f47;
+            /* margin-top: 0px; */
+            letter-spacing: 0 !important;
+            font-weight: 300;
+            position: absolute;
+            bottom: 0;
+            /* font-size: 15px; */
+        }
+        .footer i{
+            margin-right: 15px;
+            /* font-size: 22px; */
+            color: #1d3b58 !important;
+        }
+        .footer .contacts{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .mail{
+            margin-left: 130px;
+        }
+        .footer .location{
+            margin-left: 130px;
+        }
+        .footer_key{
+            margin-top: 10px;
+            padding-left: 145px;
+            color: #1c2120;
+        }
+        .inline{
+            display: inline;
+        }
+        .inline_block{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!----------------------HEADER------------------>
+        <div class="Header">
+            <div class="page_no">
+                <p>PAGE 1/2</p>
+            </div>
+            <div class="title inline">
+                <h1 class="inline page_name">COLLECTION</h1>
+            </div>
+            <div class="logo inline">
+                <h2 class="inline">LOGO</h2>
+            </div>
+            <div class="company_info">
+                <div class="inline">&#60;company_name></div>
+                <div class="inline info">&#60;organisation_number></div>
+                <div class="inline info">&#60;vat_number></div>
+                <div class="inline info">Godkänd för F-skatt</div>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <!---------------------REMINDER------------------>
+            <div class="invoice">
+                <div class="inline_block invoice_to">
+                    <div class="title">INVOICE TO :</div>
+                    <div class="name">SAMIRA HADID</div>
+                    <div class="info">
+                        <div>Address: 123 Anywhere St.,Any City, ST 12345</div>
+                        <div>Date : 21/05/2022</div>
+                        <div>Number: +123-456-7890</div>
+                        <div>&#60;receiver_extra_field1>: &#60;value1></div>
+                        <div>&#60;receiver_extra_field2>: &#60;value2></div>
+                    </div>
+                </div>
+                <div class="inline_block payable_to">
+                    <div class="ocr">
+                        <div>OCR No: 12345</div>
+                        <div>Reminder number: 2857193521I</div>
+                        <div>Date: 23/06/2023</div>
+                        <div>Due date: 30/06/2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------REMINDER TEXT--------------->
+            <div class="col reminder_text">
+                <div class="reminder_text_title open_sauce">Inkassokrav avseende faktura NR 5682 från COMP. INC.</div>
+                <div class="upper_text">
+                    Eftersom vi inte mottagit någon betalning för ovan faktura till PER JOHANSSON, trots tidigare påminnelser, kommer här ett inkassokrav på nedanstående skuld. Undvik ytterligare avgifter och räntor genom att betala enligt nedan senast 2021-10-18.
+                </div>
+            </div>
+
+
+            <!-----------------------REMINDER TABLE---------------------------->
+            <div class="reminder_table table">
+                <div class="table_rows odd inline-block reminder_table_title">
+                    <div class="">REMINDER REFERS TO</div>
+                </div>
+                <div class="table_rows">
+                    <div class="inline_block">Invoice:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+                <div class="table_rows ">
+                    <div class="inline_block">Invoice amount:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+                <div class="table_rows">
+                    <div class="inline_block">Due date:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+                <div class="table_rows">
+                    <div class="inline_block">Reminder fee:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+                <div class="table_rows">
+                    <div class="inline_block">Interest fee:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+                <div class="table_rows">
+                    <div class="inline_block">Inkasso fee:</div>
+                    <div class="value inline_block">$100.00</div>
+                </div>
+            </div>
+            
+            <div class="TOTAL">
+                <div class="inline total">TOTAL</div>
+                <div class="inline value">$500</div>
+            </div>
+
+            <!-------------------------------TABLE TEXT--------------->
+            <div class="text_table">
+                <div class="first-p">
+                    Eftersom vi inte mottagit någon betalning för ovan faktura till PER JOHANSSON, trots tidigare påminnelser, kommer här ett inkassokrav på nedanstående skuld. Undvik ytterligare avgifter och räntor genom att betala enligt nedan senast 2021-10-18.
+
+                </div>
+                <div class="second-p">
+                    För detaljerad beskrivning av originalfakturan samt information om räntor och avgifter, se sista sidan.
+Eventuella invändningar mot inkassokravet ska göras med redovisning av saklig grund samt inkassokravets OCR-nummer före 2021-10-18. Bestridandet görs med fördel via minfaktura@faktura.se.
+Utebliven invändning eller betalning kan medföra att ärendet överlämnas till Kronofogdemyndigheten för ansökan om betalningsföreläggande, varvid utmätning kan följa. Vid eventuellt rättsligt förfarande kommer ytterligare kostnader att påföras skulden. Dröjsmålsränta löper till dess full betalning sker.
+                </div>
+                <div class="third-p">
+                    Med vänlig hälsning
+                </div>
+            </div>
+
+            <!-----------------------FOOTER------------------>
+            <div class="col footer">
+                <div class="contacts poppins">
+                    <div class="row phone inline"><i class="fa-solid fa-phone"></i>+123-456-7890</div>
+                    <div class="row mail inline"><i class="fa-solid fa-envelope"></i>hello@reallygreatsite.com</div>
+                    <div class="row location inline"><i class="fa-solid fa-location-dot"></i>123 Anywhere St., Any City, ST 12345</div>
+                </div>
+                <div class="footer_key" style="position: relative;">
+                    <div class="inline">&#60;footer_key_1> &#60;footer_key_1> </div>
+                    <div class="inline"style="padding-left: 87.5px;">&#60;footer_key_2> &#60;footer_key_2></div>
+                    <div class="page_no inline" style="position: absolute; right: -100px; font-size: 33.6998815208px;">PAGE 1/2</div>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+
+
+<!--------------------------------SECOND PAGE-------------------->
+    <div class="container">
+        <!----------------------HEADER------------------>
+        <div class="Header">
+            <div class="page_no">
+                <p>PAGE 2/2</p>
+            </div>
+            <div class="title inline">
+                <h1 class="inline page_name">COLLECTION</h1>
+            </div>
+            <div class="logo inline">
+                <h2 class="inline">LOGO</h2>
+            </div>
+            <div class="company_info">
+                <div class="inline">&#60;company_name></div>
+                <div class="inline info">&#60;organisation_number></div>
+                <div class="inline info">&#60;vat_number></div>
+                <div class="inline info">Godkänd för F-skatt</div>
+            </div>
+        </div>
+        <div class="content">
+            <!-----------------------PAYMENT----------------->
+            <div class="payment">
+                <div class="payment_title">
+                    <div><b>Payment Method</b></div>
+                </div>
+                <div class="inline_block">
+                    <div class="inline_block first-column">
+                        <div class="payment_method light">
+                            <div>Bankgiro-number: 12345678</div>
+                            <div>Plusgiro-number: 845747383</div>
+                            <div>Swish-number: 1234562355</div>
+                        </div>
+                        <div class="iban">
+                            <div><b>IBAN</b></div>
+                            <div class="light">IBAN-number: JO71CB JO0000 000000 001234 567890</div>
+                            <div class="light">Swift-number: BNOR PH MMXXX</div>
+                            <div class="light">Bank: SEB</div>
+                        </div>
+                    </div>
+                    <div class="inline_block second-column">
+                        <div class="terms">
+                            <div class="bank_transfer">
+                                <div class="title"><b>BANK TRANSFER</b></div>
+                                <div class="light">Account number: DE89370400440532013000</div>
+                                <div class="light">Clearing number: DEBLZ12345678</div>
+                                <div class="light">Bank: SEB</div>
+                            </div>
+                            <div class="light">
+                                Terms of payment: 6
+                            </div>
+                            <div class="light">Late interest rate: 10.50% per annum</div>
+                            <div class="light">Invoice period: &#60;invoice_period></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------------DETAILS----------------->
+            <div class="details">
+                <div class="details_title">Details</div>
+                <div class="first-p">
+                    Räntor och avgifter:</br>
+                    En påminnelseavgift på 60 kr samt en avgift för inkassokrav på 180 kr har påförts fakturan. Det har även påförts en dröjsmålsränta baserad på referensränta + 8% i årsränta enligt räntelagens 6 paragraf. Dröjsmålsräntan är beräknad från förfallodatum till datum för inkassokravet. Om inte betalning inkommer innan förfallodatum för detta inkassokrav kan ytterligare ränta och avgifter tillkomma.
+                </div>
+                <div class="second-p">
+                    
+                    Behandling av personuppgifter:</br>
+                    Fortnox Finans är personuppgiftsbiträde för behandlingen av dina personuppgifter i syfte att utföra vårt uppdrag att hantera inkassokrav. Vi kan även komma att behandla dina personuppgifter för egna ändamål i rollen som personuppgiftsansvarig, vilket du kan läsa om i vår integritetspolicy som du hittar på fortnox.se
+                </div>
+            </div>
+
+
+            <!-----------------------FOOTER------------------>
+            <div class="col footer">
+                <div class="contacts poppins">
+                    <div class="row phone inline"><i class="fa-solid fa-phone"></i>+123-456-7890</div>
+                    <div class="row mail inline"><i class="fa-solid fa-envelope"></i>hello@reallygreatsite.com</div>
+                    <div class="row location inline"><i class="fa-solid fa-location-dot"></i>123 Anywhere St., Any City, ST 12345</div>
+                </div>
+                <div class="footer_key" style="position: relative;">
+                    <div class="inline">&#60;footer_key_1> &#60;footer_key_1> </div>
+                    <div class="inline"style="padding-left: 87.5px;">&#60;footer_key_2> &#60;footer_key_2></div>
+                    <div class="page_no inline" style="position: absolute; right: -100px; font-size: 33.6998815208px;">PAGE 2/2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

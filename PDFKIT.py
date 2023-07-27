@@ -1,12 +1,11 @@
 import pdfkit
 
-path_to_file = 'invoice.html'
+path_to_file = 'collection.html'
 
 
 options = {
-    'page-width': '8.27in',  # Set the width to 8.27 inches
-    'page-height': '11.69in',  # Set the height to 11.69 inches
-    # 'page-size': 'A4',
+    'page-width': '8.27in', 
+    'page-height': '11.69in',  
     'dpi': 100,
     'margin-top': '0',
     'margin-right': '0',
@@ -15,4 +14,4 @@ options = {
     'enable-local-file-access': True,
 }
 
-pdfkit.from_file(path_to_file, 'invoice_output.pdf', options=options)
+pdfkit.from_file(path_to_file, 'collection_output.pdf', options=options)
